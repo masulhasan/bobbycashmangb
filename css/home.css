@@ -254,13 +254,13 @@ body {
 }
 
 .copyright {
-  margin-left: 7%;
+  margin-right: 7%;
   font-family: "Metric Light";
 }
 
 @media (max-width: 1280px) {
   .copyright {
-    margin-left: 0.1%;
+    margin-right: 0.1%;
     font-size: 15px;
     font-family: "Metric Light";
   }
@@ -268,7 +268,7 @@ body {
 
 @media (max-width: 767px) {
   .copyright {
-    margin-left: 0.1%;
+    margin-right: 0.1%;
     font-size: 12px;
     font-family: "Metric Light";
   }
@@ -277,13 +277,13 @@ body {
 .social {
   display: flex;
   gap: 15px;
-  margin-right: 7%;
+  margin-left: 7%;
   font-family: "Metric Light";
 }
 
 @media (max-width: 1280px) {
   .social {
-    margin-right: 0.1%;
+    margin-left: 0.1%;
     font-size: 15px;
     font-family: "Metric Light";
   }
@@ -291,7 +291,7 @@ body {
 
 @media (max-width: 767px) {
   .social {
-    margin-right: 0.1%;
+    margin-left: 0.1%;
     font-size: 12px;
     font-family: "Metric Light";
   }
