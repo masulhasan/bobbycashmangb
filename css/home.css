@@ -484,13 +484,13 @@ body {
 
 .video-container {
   grid-column: 1 / span 2;
-  /* Changed: spans both columns */
   width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 0px;
   margin-top: 10px;
-  /* Added: creates space below the title */
+  border-radius: 10px;
+  
 }
 
 .video-container video {
