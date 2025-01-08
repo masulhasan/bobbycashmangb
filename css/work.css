@@ -205,7 +205,7 @@ body {
 
 .portfolio-item.standard {
   aspect-ratio: 780/520;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .portfolio-item img {

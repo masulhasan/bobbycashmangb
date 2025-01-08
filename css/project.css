@@ -487,7 +487,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 4px;
   margin-top: 10px;
   /* Added: creates space below the title */
 }
@@ -620,7 +620,7 @@ body {
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   overflow: hidden;
   padding-bottom: 3%;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .image-container img {
@@ -721,5 +721,5 @@ body {
 
 .portfolio-item.standard {
   aspect-ratio: 1/1;
-  border-radius: 10px;
+  border-radius: 4px;
 }

@@ -571,7 +571,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .video-container {
@@ -584,7 +584,7 @@ body {
 .portfolio-item.standard {
   position: relative;
   padding-top: 100%; /* 1:1 Aspect Ratio */
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 /* Ensure containers maintain proper positioning */
