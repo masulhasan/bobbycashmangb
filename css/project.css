@@ -199,6 +199,12 @@ body {
   margin-left: 8px;
 }
 
+@media(max-width: 1280px) {
+  .portfolio-additional {
+    margin-left: 0px;
+  }
+}
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -466,10 +472,14 @@ body {
 
 /* Video section styles */
 .video-section {
-  margin: -2px 0;
+  margin:  0;
 }
+
+
 .video-section2 {
-  margin: -10px 0;
+  margin-top: -10px;
+  margin-bottom: 1px;
+  
 }
 .image-section {
   margin: 10px 0;
