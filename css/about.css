@@ -163,7 +163,7 @@ body {
 .portfolio-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -178,6 +178,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 100%;
+  justify-content: center;
 }
 
 .portfolio-section {
@@ -193,7 +194,7 @@ body {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .portfolio-item {
@@ -209,9 +210,9 @@ body {
 }
 
 .portfolio-item.standard {
-  aspect-ratio: 1/1;
-  max-width: 780px;
-  max-height: 780px;
+  aspect-ratio: 2/1;
+  
+  max-height: 390px;
 }
 
 .portfolio-item video {
@@ -311,7 +312,7 @@ body {
 
   .header,
   .portfolio-container {
-    width: 86%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
