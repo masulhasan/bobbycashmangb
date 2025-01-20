@@ -295,8 +295,8 @@ body {
   left: 0;
   right: 0;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  color: white;
+  background: rgb(155, 22, 22); /* Semi-transparent background */
+  color: rgb(0, 0, 0);
   font-family: "Metric Light";
 }
 

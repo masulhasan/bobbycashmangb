@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
-    sans-serif, "Archia Bold", "Metric Light";
+    sans-serif, "Archia Bold", "Archia Regular", "Metric Light";
 }
 
 @font-face {
@@ -20,6 +20,19 @@
 }
 
 @font-face {
+  font-family: "Archia Regular";
+  src: url("../Fonts/Archia_Font_Web/03.Archia-Regular-webfont/archia-regular-webfont.eot");
+  src: url("../Fonts/Archia_Font_Web/03.Archia-Regular-webfont/archia-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Fonts/Archia_Font_Web/03.Archia-Regular-webfont/archia-regular-webfont.woff")
+      format("woff"),
+    url("../Fonts/Archia_Font_Web/03.Archia-Regular-webfont/archia-regular-webfont.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Metric Light";
   src: url("../Fonts/Metric_font/Metric-Light.otf") format("opentype");
   font-weight: normal;
@@ -32,6 +45,48 @@ body {
   flex-direction: column;
   padding: 0 20px;
   font-family: "Metric Light";
+
+  position: relative;
+  background-image: url("../img/HeaderBG/header-bg.png"),
+    url("../img/FooterBG/79521629693dde3f1d06f4e891475322.png");
+  background-size: 100%, 100%;
+  background-position: center -2%, center 91.65%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("../img/HeaderBG/header-bg.png"); /* Change to your mobile background image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevent repeating */
+  }
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 140px; /* Start 50px down */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Extend to the bottom */
+  background-color: #f1f2f8; /* Example: light white with some transparency */
+  z-index: -1; /* Ensure it stays behind other content */
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/CenterBodyBg/midbg.png");
+  background-size: 100%;
+  background-position: center 18%;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure it stays behind other content */
+  opacity: 20%;
 }
 
 /* Hover Effect Start */
@@ -73,7 +128,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.8%;
-  padding-bottom: 2.8%;
   font-size: 20px;
   font-family: "Metric Light";
   max-width: 1600px;
@@ -123,7 +177,7 @@ body {
 
 .logo {
   font-size: 1.2rem;
-  color: #333;
+  color: #3c096c;
   text-decoration: none;
   font-family: "Archia Bold", sans-serif;
 }
@@ -131,14 +185,14 @@ body {
 @media (max-width: 1280px) {
   .logo {
     font-size: 15px;
-    color: #333;
+    color: #3c096c;
     text-decoration: none;
   }
 }
 @media (max-width: 767px) {
   .logo {
     font-size: 15px;
-    color: #333;
+    color: #3c096c;
     text-decoration: none;
   }
 }
@@ -146,16 +200,18 @@ body {
 .nav {
   display: flex;
   gap: 20px;
-  font-family: "Metric Light";
+  font-family: "Archia Regular";
   font-size: 1.5rem;
+  color: #3c096c;
 }
 
 @media (max-width: 1280px) {
   .nav {
     display: flex;
     gap: 20px;
-    font-family: "Metric Light";
+    font-family: "Archia Regular";
     font-size: 15px;
+    color: #3c096c;
   }
 }
 
@@ -163,15 +219,17 @@ body {
   .nav {
     display: flex;
     gap: 20px;
-    font-family: "Metric Light";
+    font-family: "Archia Regular";
     font-size: 15px;
+    color: #3c096c;
   }
 }
 
 .nav a {
   text-decoration: none;
   color: #333;
-  font-family: "Metric Light";
+  font-family: "Archia Regular";
+  color: #3c096c;
 }
 
 .portfolio-container {
@@ -201,10 +259,10 @@ body {
 .portfolio-additional {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
   width: 100%;
-  max-width: 1580px;
-  margin: 0 auto;
+  max-width: 1600px;
+  margin-bottom: 15px;
 }
 
 .portfolio-item {
@@ -220,9 +278,9 @@ body {
 }
 
 .portfolio-item.standard {
-  aspect-ratio: 1/1;
-  max-width: 780px;
-  max-height: 780px;
+  aspect-ratio: 16/9;
+  max-width: 1080px;
+  max-height: 720px;
 }
 
 .portfolio-item video {
@@ -251,6 +309,21 @@ body {
   margin-right: -20px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 8.7%;
+    padding-right: 8.7%;
+  }
 }
 
 .copyright {
@@ -311,9 +384,13 @@ body {
 
   .portfolio-container,
   .portfolio-grid,
-  .portfolio-section,
-  .portfolio-additional {
+  .portfolio-section {
     gap: 10px;
+  }
+
+  .portfolio-additional {
+    row-gap: 10px;
+    column-gap: 20px;
   }
 
   .header {
@@ -334,7 +411,7 @@ body {
   .portfolio-grid,
   .portfolio-section,
   .portfolio-additional {
-    gap: 8px;
+    gap: 10px;
   }
 
   .footer {
@@ -349,6 +426,17 @@ body {
     width: 100%;
     margin-left: 0.1%;
     margin-right: 0.1%;
+  }
+
+  .portfolio-container {
+    width: 100%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    margin-top: -8%;
+  }
+
+  .portfolio-additional {
+    margin-bottom: 1px;
   }
 }
 
@@ -389,7 +477,7 @@ body {
 }
 
 /* Desktop Layout (above 768px) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .about-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -479,7 +567,8 @@ body {
 
 /* Video section styles */
 .video-section {
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .video-container {
@@ -489,8 +578,25 @@ body {
   overflow: hidden;
   border-radius: 0px;
   margin-top: 10px;
-  border-radius: 4px;
-  
+  border-radius: 8px;
+}
+
+@media (min-width: 1280px) {
+  .video-container {
+    grid-column: 1 / span 2;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+}
+
+.video-section {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .video-container video {
@@ -577,7 +683,7 @@ body {
 .grey-box {
   width: 100%;
   height: 100%;
-  background-color: #e0e0e0;
+  background-color: #1f2937;
   position: absolute;
   top: 0;
   left: 0;
@@ -594,4 +700,34 @@ body {
 .video-container {
   position: relative;
   overflow: hidden;
+}
+
+.grey-box {
+  width: 100%;
+  height: 100%;
+  background-color: #1f2937;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+}
+
+.portfolio-tittle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 15px 15px;
+  background-color: #f1f2f8a6;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+  font-family: "Archia Bold";
+}
+
+.portfolio-item:hover .portfolio-tittle {
+  opacity: 1; /* Show on hover */
 }
